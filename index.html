@@ -3,232 +3,283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ammar | AI Solutions Developer</title>
-  <meta name="description" content="I build custom AI solutions for businesses: chatbots, RAG pipelines, and LLM integrations." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <title>Ammar · AI Solutions Developer</title>
+  <meta name="description" content="I build custom AI solutions: chatbots, RAG pipelines, and LLM integrations that ship to production." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="nav">
-    <div class="nav-inner">
-      <span class="nav-brand">R.Ammar<span class="accent"></span></span>
-      <nav class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Stack</a>
-        <a href="#contact">Contact</a>
-        <a href="https://github.com/ammarr01" target="_blank" rel="noopener" class="nav-cta">GitHub ↗</a>
-      </nav>
+<nav>
+  <div class="wrap nav-inner">
+    <div class="logo">R<span>.</span>Ammar</div>
+    <div class="nav-links" id="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
-  </header>
+    <a href="#contact" class="nav-cta">Start a project</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</nav>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-inner">
-      <p class="hero-label">AI Solutions Developer &nbsp;
-      <h1 class="hero-title">
-        Custom AI solutions<br />
-        <span class="accent">that actually ship.</span>
-      </h1>
-      <p class="hero-sub">
-        I build chatbots, RAG pipelines, and LLM integrations for businesses
-        that want real automation, not demos.
-      </p>
-      <div class="hero-ctas">
-        <a href="#projects" class="btn btn-primary">See My Work</a>
-        <a href="mailto:scholarammar@gmail.com" class="btn btn-ghost">Get in Touch</a>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="tag">Available for freelance work</div>
+    <h1>I build <em>AI systems</em><br>that actually ship.</h1>
+    <p class="hero-sub">AI developer specializing in practical, production-ready tools — custom chatbots, RAG pipelines, and applied ML. No buzzwords, just working software.</p>
+    <div class="btn-row">
+      <a href="#work" class="btn btn-fill">View my projects →</a>
+      <a href="mailto:scholarammar@gmail.com" class="btn btn-ghost">Get in touch</a>
+    </div>
+    <div class="stack-strip">
+      <span class="stack-label">Working with:</span>
+      <span class="stack-pill">Python</span>
+      <span class="stack-pill">LangChain / LangGraph</span>
+      <span class="stack-pill">FastAPI</span>
+      <span class="stack-pill">OpenAI / Anthropic</span>
+      <span class="stack-pill">React</span>
+      <span class="stack-pill">pgvector</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">01 / About</div>
+      <h2>The developer behind the code</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="row"><span class="k">role</span><span>AI / ML Developer</span></div>
+        <div class="row"><span class="k">focus</span><span>RAG, chatbots, LLMs</span></div>
+        <div class="row"><span class="k">stack</span><span>Python, FastAPI, React</span></div>
+        <div class="row"><span class="k">based</span><span>Remote / Worldwide</span></div>
+        <div class="row"><span class="k">status</span><span class="status-open">● Open to work</span></div>
+      </div>
+      <div class="about-text reveal">
+        <p>I build AI systems that go from prototype to <strong>production</strong> — chatbots with real tool use, RAG pipelines that return honest citations, and fine-tuned models that generalize beyond the training set.</p>
+        <p>My recent projects include a live <strong>customer support chatbot</strong> built on LangGraph deployed on Railway, an <strong>AI Document Assistant</strong> with source citations using LlamaIndex and pgvector, and a <strong>fine-tuned Llama 3.2</strong> model for sentiment analysis published on HuggingFace.</p>
+        <p>I work with founders and small teams who need a technical partner who can scope a feature, build it end-to-end, and hand it off cleanly.</p>
       </div>
     </div>
-    <div class="hero-glow"></div>
-  </section>
+  </div>
+</section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <div class="section-inner">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-sub">End-to-end AI systems, deployed and working.</p>
-      <div class="projects-grid">
-
-        <!-- 1: Customer Support Chatbot -->
-        <div class="card card-featured">
-          <div class="card-header">
-            <span class="card-badge badge-live">● Live</span>
-            <div class="card-links">
-              <a href="https://github.com/ammarr01/Customer-Support-AI-Chatbot" target="_blank" rel="noopener">GitHub ↗</a>
-            </div>
-          </div>
-          <h3>Customer Support AI Chatbot</h3>
-          <p>
-            Automates routine customer inquiries: FAQs, order status, product info,
-            return policies, without human intervention. Built on a LangGraph ReAct
-            agent with tool use and conversation memory.
-          </p>
-          <a class="card-action" href="https://gocart-production-dfb2.up.railway.app/" target="_blank" rel="noopener">Live Demo ▶</a>
-          <div class="tags">
-            <span class="tag">LangGraph</span>
-            <span class="tag">LangChain</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">OpenAI</span>
-            <span class="tag">RAG</span>
-            <span class="tag">React</span>
-          </div>
-        </div>
-
-        <!-- 2: AI Document Assistant -->
-        <div class="card">
-          <div class="card-header">
-            <span class="card-badge badge-rag">RAG Pipeline</span>
-            <div class="card-links">
-              <a href="https://github.com/ammarr01/AI-Document-Assistant-Application-with-source-citation" target="_blank" rel="noopener">GitHub ↗</a>
-            </div>
-          </div>
-          <h3>AI Document Assistant</h3>
-          <p>
-            Upload PDFs, reports, or contracts and query them in plain language.
-            Returns answers with precise source citations. built for people or teams that need
-            fast, auditable information retrieval from large document sets.
-          </p>
-          <details class="card-video">
-            <summary>Watch Demo ▶</summary>
-            <video src="https://www.dropbox.com/scl/fi/iiagk4mvjdieh8z4ehtxv/qna-app.demo.mp4?rlkey=h4h8zz8zgieqtqc1hsjk53osj&st=9a1ej86m&raw=1" controls preload="none"></video>
-          </details>
-          <div class="tags">
-            <span class="tag">LlamaIndex</span>
-            <span class="tag">ChromaDB</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">React</span>
-            <span class="tag">OpenAI</span>
-            <span class="tag">pgvector</span>
-          </div>
-        </div>
-
-        <!-- 3: Document Extraction -->
-        <div class="card">
-          <div class="card-header">
-            <span class="card-badge badge-extract">Extraction</span>
-            <div class="card-links">
-              <a href="https://github.com/ammarr01/AI-powered-document-extraction-Application" target="_blank" rel="noopener">GitHub ↗</a>
-            </div>
-          </div>
-          <h3>AI Document Extraction App</h3>
-          <p>
-            Extracts structured data from PDFs, scanned documents, and images into
-            Excel. Supports multiple document types and languages built for workflows
-            with Document extraction heavy Tasks.
-          </p>
-          <details class="card-video">
-            <summary>Watch Demo ▶</summary>
-            <video src="https://uc1d334d7ab76fd6f464425a2211.dl.dropboxusercontent.com/cd/0/inline/C9T65rWGTZNuVXAyGXb3Frp6iGrtB-69uff3x9WQgKS3oV9qZjR7YDc6G5KqWONlx26FaXL7i21XEQBWDEllEqbcvHF5LwBsxlbnokChyDg4Ju8f524NDNsDQRogo91Aui-byYmvATBpAOfCIZ-zsZY0/file" controls preload="none"></video>
-          </details>
-          <div class="tags">
-            <span class="tag">GPT-4o</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">React</span>
-            <span class="tag">Python</span>
-            <span class="tag">OCR</span>
-          </div>
-        </div>
-
-        <!-- 4: Fine-tuning -->
-        <div class="card">
-          <div class="card-header">
-            <span class="card-badge badge-ml">Fine-tuning</span>
-            <div class="card-links">
-              <a href="https://github.com/ammarr01/Fine-tuning-a-model-on-reviews-sentiment-analysis" target="_blank" rel="noopener">GitHub ↗</a>
-            </div>
-          </div>
-          <h3>Sentiment Analysis Fine-tuning</h3>
-          <p>
-            Fine-tuned Llama3.2 1B on a reviews dataset for sentiment
-            classification. Paste any product, restaurant, or app review and get instant sentiment classification!
-          </p>
-          <a class="card-action" href="https://huggingface.co/Kynooo/reviews-sentiment-gguf" target="_blank" rel="noopener">HuggingFace ↗</a>
-          <div class="tags">
-            <span class="tag">Fine-tuning</span>
-            <span class="tag">Python</span>
-            <span class="tag">NLP</span>
-            <span class="tag">Jupyter</span>
-            <span class="tag">Unsloth</span>
-            <span class="tag">LoRA</span>
-          </div>
-        </div>
-
-      </div>
+<!-- CAPABILITIES -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">02 / Capabilities</div>
+      <h2>What I help clients build</h2>
     </div>
-  </section>
-
-  <!-- Tech Stack -->
-  <section class="section section-alt" id="skills">
-    <div class="section-inner">
-      <h2 class="section-title">Tech Stack</h2>
-      <p class="section-sub">Tools I build with.</p>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <p class="skill-label">AI / LLMs</p>
-          <div class="tags">
-            <span class="tag">LangChain</span>
-            <span class="tag">LangGraph</span>
-            <span class="tag">LlamaIndex</span>
-            <span class="tag">OpenAI API</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">Ollama</span>
-          </div>
+    <div class="skills-list reveal">
+      <div class="skill-item">
+        <span class="skill-num">01</span>
+        <div>
+          <div class="skill-name">LLM-powered apps</div>
+          <div class="skill-desc">Custom chat interfaces, copilots, and assistants built on top of foundation models with real tool use and memory.</div>
         </div>
-        <div class="skill-group">
-          <p class="skill-label">Backend</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">pgvector</span>
-            <span class="tag">ChromaDB</span>
-            <span class="tag">Docker</span>
-          </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-num">02</span>
+        <div>
+          <div class="skill-name">RAG &amp; search systems</div>
+          <div class="skill-desc">Retrieval pipelines that ground model output in your own data, with accurate, auditable citations.</div>
         </div>
-        <div class="skill-group">
-          <p class="skill-label">Frontend</p>
-          <div class="tags">
-            <span class="tag">React</span>
-            <span class="tag">Next.js</span>
-            <span class="tag">JavaScript</span>
-          </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-num">03</span>
+        <div>
+          <div class="skill-name">Document intelligence</div>
+          <div class="skill-desc">Extraction of structured data from PDFs, scanned images, and contracts — into clean tables or databases.</div>
         </div>
-        <div class="skill-group">
-          <p class="skill-label">Deployment</p>
-          <div class="tags">
-            <span class="tag">Railway</span>
-            <span class="tag">Render</span>
-            <span class="tag">Docker Compose</span>
-            <span class="tag">GitHub Pages</span>
-          </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-num">04</span>
+        <div>
+          <div class="skill-name">Model fine-tuning</div>
+          <div class="skill-desc">Adapting open-weight models (Llama, Mistral) to domain-specific tasks using LoRA and Unsloth.</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-num">05</span>
+        <div>
+          <div class="skill-name">Production deployment</div>
+          <div class="skill-desc">Shipping AI features on Railway, Render, or Docker that are monitored, cost-aware, and actually maintainable.</div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-num">06</span>
+        <div>
+          <div class="skill-name">Technical consulting</div>
+          <div class="skill-desc">Helping founders scope what's realistic before writing a single line of code — saving time and budget.</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="section-inner contact-inner">
-      <h2 class="section-title">Open to Work</h2>
-      <p class="section-sub">
-        Looking for freelance projects and agency partnerships, locally and remotely.<br />
-        If you need AI integrated into your business workflow, let's talk.
-      </p>
+<!-- PROJECTS -->
+<section id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">03 / Selected work</div>
+      <h2>Projects</h2>
+    </div>
+    <div class="proj-grid reveal">
+
+      <!-- 1 -->
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-icon">◆</div>
+          <div class="proj-link-group">
+            <a href="https://gocart-production-dfb2.up.railway.app/" target="_blank" rel="noopener" class="proj-link">Live Demo ↗</a>
+            <a href="https://github.com/ammarr01/Customer-Support-AI-Chatbot" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Customer Support AI Chatbot</h3>
+        <p>LangGraph ReAct agent with tool use and conversation memory. Automates FAQs, order status, and returns without human intervention. Deployed live on Railway.</p>
+        <div class="tag-row">
+          <span class="pill">LangGraph</span>
+          <span class="pill">LangChain</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">OpenAI</span>
+          <span class="pill">RAG</span>
+          <span class="pill">React</span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-icon">◇</div>
+          <div class="proj-link-group">
+            <a href="https://www.dropbox.com/scl/fi/iiagk4mvjdieh8z4ehtxv/qna-app.demo.mp4?rlkey=h4h8zz8zgieqtqc1hsjk53osj&st=9a1ej86m&raw=1" target="_blank" rel="noopener" class="proj-link">Watch Demo ↗</a>
+            <a href="https://github.com/ammarr01/AI-Document-Assistant-Application-with-source-citation" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>AI Document Assistant</h3>
+        <p>Upload PDFs, reports, or contracts and query them in plain language. Returns answers with precise source citations — built for auditable information retrieval.</p>
+        <div class="tag-row">
+          <span class="pill">LlamaIndex</span>
+          <span class="pill">ChromaDB</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">React</span>
+          <span class="pill">OpenAI</span>
+          <span class="pill">pgvector</span>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-icon">▲</div>
+          <div class="proj-link-group">
+            <a href="https://github.com/ammarr01/AI-powered-document-extraction-Application" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>AI Document Extraction App</h3>
+        <p>Extracts structured data from PDFs, scanned documents, and images into Excel. Supports multiple document types and languages using GPT-4o vision and OCR.</p>
+        <div class="tag-row">
+          <span class="pill">GPT-4o</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">React</span>
+          <span class="pill">Python</span>
+          <span class="pill">OCR</span>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="proj-card">
+        <div class="proj-top">
+          <div class="proj-icon">●</div>
+          <div class="proj-link-group">
+            <a href="https://huggingface.co/Kynooo/reviews-sentiment-gguf" target="_blank" rel="noopener" class="proj-link">HuggingFace ↗</a>
+            <a href="https://github.com/ammarr01/Fine-tuning-a-model-on-reviews-sentiment-analysis" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+        <h3>Sentiment Analysis Fine-tuning</h3>
+        <p>Fine-tuned Llama 3.2 1B on a product-reviews dataset for sentiment classification using Unsloth and LoRA. Quantized GGUF model published on HuggingFace.</p>
+        <div class="tag-row">
+          <span class="pill">Llama 3.2</span>
+          <span class="pill">Unsloth</span>
+          <span class="pill">LoRA</span>
+          <span class="pill">HuggingFace</span>
+          <span class="pill">Python</span>
+          <span class="pill">NLP</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">04 / How it works</div>
+      <h2>From idea to shipped feature</h2>
+    </div>
+    <div class="process-list reveal">
+      <div class="proc-item">
+        <div class="proc-num">01</div>
+        <div>
+          <h3>Discovery call</h3>
+          <p>We talk through your goals, constraints, and what "done" actually looks like — no commitment required.</p>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-num">02</div>
+        <div>
+          <h3>Scoped proposal</h3>
+          <p>You get a clear plan with timeline and cost, broken into milestones so there are no surprises.</p>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-num">03</div>
+        <div>
+          <h3>Build &amp; check-ins</h3>
+          <p>Regular updates as the work progresses, with working demos along the way instead of a black box.</p>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-num">04</div>
+        <div>
+          <h3>Ship &amp; support</h3>
+          <p>Deployed, documented, and handed off — with a support window to fix anything that comes up.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="contact-box">
+      <div>
+        <h2>Have a project in mind?</h2>
+        <p class="hero-sub">Tell me what you're trying to build. I usually reply within a day.</p>
+      </div>
       <div class="contact-links">
-        <a href="mailto:scholarammar@gmail.com" class="btn btn-primary">scholarammar@gmail.com</a>
-        <a href="https://github.com/ammarr01" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+        <a href="mailto:scholarammar@gmail.com" class="contact-link">
+          <span>scholarammar@gmail.com</span><span>↗</span>
+        </a>
+        <a href="https://github.com/ammarr01" target="_blank" rel="noopener" class="contact-link">
+          <span>github.com/ammarr01</span><span>↗</span>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Ammar &nbsp;·&nbsp; 2026</p>
-  </footer>
+<footer>© 2026 Ammar · AI Solutions Developer</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
